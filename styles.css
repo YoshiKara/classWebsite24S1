@@ -2,25 +2,31 @@
 /* setting the values */
 :root {
     --main-font: arial, helvetica, sans-serif;
-    --french-rose: #f75590ff;
-    --champagne-pink: #f8d8c8;
-    --jasmine: #fbd87fff;
-    --celeste: #b5f8feff;
-    --aquamarine: hsl(167, 100%, 65%);
+    --light-sea-green: #07beb8ff;
+    --robin-egg-blue: #3dccc7ff;
+    --tiffany-blue: #68d8d6ff;
+    --celeste: #9ceaefff;
+    --celeste-2: #c4fff9ff;
 }
 
 body {
     /* here we use main-font */
     font-family: var(--main-font);
-    background-color: var(--champagne-pink);
+    background-color: var(--celeste);
 }
 .main-header {
-    background-color: var(--jasmine);
-    display: flex;
+    background-color: var(--tiffany-blue);
+    /*display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+}
+.main-navigation{
+    color: var(--robin-egg-blue)
 }
 .logo {
-    max-width: 80px;
+    max-width: 128px;
     padding: 10px;
 }
