@@ -12,19 +12,28 @@
 body {
     /* here we use main-font */
     font-family: var(--main-font);
-    background-color: var(--celeste);
+    background-color: var(--celeste-2);
 }
 .main-header {
-    background-color: var(--tiffany-blue);
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;*/
+    background-color: var(--celeste);
     display: grid;
     grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
 
 }
-.main-navigation{
-    color: var(--robin-egg-blue)
+.user-navigation {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    align-self: end;
+    padding: 4px;
+}
+.user-navigation a {
+    color: var(--robin-egg-blue);
+    text-decoration: none;
+    padding: 6px 8px 8px;
+}
+.user-navigation a:hover{
+    color: var(--light-sea-green);
 }
 .logo-link {
     grid-row: span 2;
@@ -32,4 +41,24 @@ body {
 .logo {
     max-width: 128px;
     padding: 10px;
+}
+.sidebar {
+    height: 100%;
+    width: 148px;
+    position: fixed;
+    z-index: 1;
+    top: 160px;
+    left: 8px;
+    background-color: var(--celeste);
+    overflow-x: hidden;
+}
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--robin-egg-blue);
+    display: block;
+}
+.sidebar a:hover {
+    color: var(--light-sea-green);
 }
