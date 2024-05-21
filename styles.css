@@ -26,6 +26,9 @@ body {
 .main-navigation{
     color: var(--robin-egg-blue)
 }
+.logo-link {
+    grid-row: span 2;
+}
 .logo {
     max-width: 128px;
     padding: 10px;
