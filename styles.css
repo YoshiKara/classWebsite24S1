@@ -25,7 +25,7 @@ body {
     grid-row-start: 2;
     grid-column-start: 3;
     align-self: end;
-    padding: 0.2em;
+    padding: 0.2em 0 0.2em 0;
 }
 .user-navigation a {
     color: var(--robin-egg-blue);
@@ -41,6 +41,15 @@ body {
 .logo {
     max-width: 128px;
     padding: 10px;
+}
+.login-logo {
+    max-width: 32px;
+}
+.wishlist-logo {
+    max-width: 32px;
+}
+.cart-logo {
+    max-width: 32px;
 }
 .sidebar {
     height: 100%;
