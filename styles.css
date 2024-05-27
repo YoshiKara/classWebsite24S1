@@ -25,12 +25,12 @@ body {
     grid-row-start: 2;
     grid-column-start: 3;
     align-self: end;
-    padding: 0.2em 0 0.2em 0;
+    padding: 0 0.5em 0.2em 0;
 }
 .user-navigation a {
     color: var(--robin-egg-blue);
     text-decoration: none;
-    padding: 0.2em;
+    padding: 0 0.3em 0 0.3em;
 }
 .user-navigation a:hover{
     color: var(--light-sea-green);
@@ -43,13 +43,13 @@ body {
     padding: 10px;
 }
 .login-logo {
-    max-width: 32px;
+    max-width: 2em;
 }
 .wishlist-logo {
-    max-width: 32px;
+    max-width: 2em;
 }
 .cart-logo {
-    max-width: 32px;
+    max-width: 2em;
 }
 .sidebar {
     height: 100%;
