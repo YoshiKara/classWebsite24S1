@@ -2,24 +2,34 @@
 /* setting the values */
 :root {
     --main-font: arial, helvetica, sans-serif;
-    --light-sea-green: #07beb8ff;
-    --robin-egg-blue: #3dccc7ff;
-    --tiffany-blue: #68d8d6ff;
-    --celeste: #9ceaefff;
-    --celeste-2: #c4fff9ff;
+    --gold-metallic: #d3af0dff;
+    --gold: #f7d126ff;
+    --naples-yellow: #f9dc5cff;
+    --jasmine: #fae588ff;
+    --cornsilk: #fdf6d8ff;
 }
 
 body {
     /* here we use main-font */
     font-family: var(--main-font);
-    background-color: var(--celeste-2);
+    background-color: var(--cornsilk);
     margin: 0px;
 }
 .main-header {
-    background-color: var(--celeste);
+    background-color: var(--jasmine);
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto;
+}
+.main-footer {
+    background-color: var(--jasmine);
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
 }
 .user-navigation {
     grid-row-start: 2;
@@ -28,12 +38,8 @@ body {
     padding: 0 0.5em 0.2em 0;
 }
 .user-navigation a {
-    color: var(--robin-egg-blue);
     text-decoration: none;
     padding: 0 0.3em 0 0.3em;
-}
-.user-navigation a:hover{
-    color: var(--light-sea-green);
 }
 .logo-link {
     grid-row: span 2;
@@ -53,29 +59,29 @@ body {
 }
 .sidebar {
     height: 100%;
-    width: 148px;
+    width: 9.2em;
     position: fixed;
     z-index: 1;
-    top: 152px;
-    background-color: var(--celeste);
+    top: 9.2em;
+    background-color: var(--jasmine);
     overflow-x: hidden;
 }
 .sidebar a {
     padding: 0.2em 0.25em 0.2em 0.5em;
     text-decoration: none;
     font-size: 18px;
-    color: var(--robin-egg-blue);
+    color: var(--gold-metallic);
     display: block;
 }
 .sidebar a:hover {
-    color: var(--light-sea-green);
+    color: var(--gold);
 }
 .search-form {
     justify-self: left;
     align-self: left;
     grid-row-start: 2;
     grid-column-start: 2;
-    padding: 0px 0px 0.2em 0.1em;
+    padding: 0 0 0.2em 0;
     display: flex;
     min-width: 60vw;
 }
@@ -95,4 +101,23 @@ body {
 .search-button {
     border-radius: 0px 5px 5px 0px;
     padding: 0.5em;
+}
+.facebook-logo {
+    max-width: 2.2em;
+    padding: 0.25em;
+}
+.socials-navigation {
+    justify-self: end;
+    grid-column-start: 3;
+}
+.socials-navigation a {
+    text-decoration: none;
+}
+.twitter-logo {
+    max-width: 2.2em;
+    padding: 0.25em;
+}
+.instagram-logo {
+    max-width: 2.2em;
+    padding: 0.25em;
 }
