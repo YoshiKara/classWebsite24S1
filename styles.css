@@ -34,11 +34,12 @@ body {
     grid-row-start: 2;
     grid-column-start: 3;
     align-self: end;
-    padding: 0 0.5em 0.2em 0;
+    padding: 0 0.5em 0.7em 0;
 }
 .user-navigation a {
     text-decoration: none;
     padding: 0 0.3em 0 0.3em;
+    color: var(--gold-metallic);
 }
 .logo-link {
     grid-row: span 2;
@@ -46,15 +47,6 @@ body {
 .logo {
     max-width: 128px;
     padding: 10px;
-}
-.login-logo {
-    max-width: 2em;
-}
-.wishlist-logo {
-    max-width: 2em;
-}
-.cart-logo {
-    max-width: 2em;
 }
 .sidebar {
     height: 100%;
@@ -101,47 +93,40 @@ body {
     border-radius: 0px 5px 5px 0px;
     padding: 0.5em;
 }
-.facebook-logo {
-    max-width: 2.2em;
-    padding: 0.25em;
-}
 .socials-navigation {
     justify-self: end;
     grid-column-start: 2;
+    padding: 0.7em 0.5em 0 0;
 }
 .socials-navigation a {
     text-decoration: none;
-}
-.twitter-logo {
-    max-width: 2.2em;
-    padding: 0.25em;
-}
-.instagram-logo {
-    max-width: 2.2em;
-    padding: 0.25em;
+    color: var(--gold-metallic);
+    padding: 0 0.3em 0 0.3em;
 }
 .about-navigation a {
     text-decoration: none;
     color: var(--gold-metallic);
     display: flex;
+    flex-direction: row;
     padding: 0.5em 0.4em 0em 0.4em;
     justify-content: center;
 }
 .about-navigation {
     grid-column-start: 1;
     position: absolute;
-    left: 332px;
+    left: 20em;
 }
 .returns-navigation a {
     text-decoration: none;
     color: var(--gold-metallic);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 0.5em 0.4em 0em 0.4em;
 }
 .returns-navigation { 
     position: absolute;
-    left: 162px;
+    left: 9.3em;
     grid-column-start: 1;
 }
 .returns-navigation a:hover {
