@@ -141,9 +141,12 @@ body {
 }
 .main-carousel {
     max-width: 75%;
-    min-width: 30%;
-    max-height: 25%;
-    min-height: 20%;
+    min-width: 35%;
+    max-height: 35%;
+    min-height: 35%;
     grid-column-start: 2;
     align-content: center;
+}
+.cell {
+
 }
