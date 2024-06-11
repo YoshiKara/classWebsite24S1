@@ -17,6 +17,7 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr 0.1fr;
+    overflow-y: scroll;
 }
 .main-header {
     background-color: var(--jasmine);
@@ -50,7 +51,7 @@ body {
 }
 .sidebar {
     height: 100%;
-    width: 9.2em;
+    width: 146px;
     position: fixed;
     z-index: 1;
     top: 9.2em;
@@ -137,16 +138,41 @@ body {
 }
 .main-content {
     display: grid;
-    grid-template-columns: 0.3fr auto;
+    grid-template-columns: 146px auto;
 }
 .main-carousel {
-    max-width: 75%;
-    min-width: 35%;
-    max-height: 35%;
-    min-height: 35%;
+    width: 75%;
+    height: 28%;
+    padding: 16px;
     grid-column-start: 2;
-    align-content: center;
+    justify-self: center;
 }
 .cell {
-
+    width: 20%;
+    height: 100%;
+    margin-right: 8px;
+    place-items: center;
+    background-position: center;
+    aspect-ratio: 16/6;
+}
+.one {
+    background-image: url("assets/shoe.jpg");
+}
+.two {
+    background-image: url("assets/shoe2.jpg");
+}
+.three {
+    background-image: url("assets/shoe3.jpg");
+}
+.four {
+    background-image: url("assets/shoe4.jpg");
+}
+.five {
+    background-image: url("assets/shoe5.jpg");
+}
+.card-image {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
 }
