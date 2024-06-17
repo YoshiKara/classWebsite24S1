@@ -16,20 +16,27 @@ body {
     margin: 0px;
     display: grid;
     min-height: 100vh;
-    grid-template-rows: auto 1fr 0.1fr;
-    overflow-y: scroll;
+    grid-template-rows: 154px auto 80px;
 }
 .main-header {
     background-color: var(--jasmine);
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
 }
 .main-footer {
     background-color: var(--jasmine);
     display: grid;
     grid-template-columns: 0.4fr auto;
     width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 80px;
+    overflow: hidden;
 }
 .user-navigation {
     grid-row-start: 2;
@@ -54,9 +61,9 @@ body {
     width: 146px;
     position: fixed;
     z-index: 1;
-    top: 9.2em;
     background-color: var(--jasmine);
-    overflow-x: hidden;
+    top: 154px;
+    overflow: hidden;
 }
 .sidebar a {
     padding: 0.2em 0.25em 0.2em 0.5em;
@@ -139,12 +146,21 @@ body {
 .main-content {
     display: grid;
     grid-template-columns: 146px auto;
+    grid-template-rows: 200px auto;
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    left: 0px;
+    top: 154px;
+    overflow: auto;
+    grid-row-start: 2;
 }
 .main-carousel {
-    width: 75%;
-    height: 28%;
+    width: 80%;
+    height: 100%;
     padding: 16px;
     grid-column-start: 2;
+    grid-row-start: 1;
     justify-self: center;
 }
 .cell {
@@ -153,7 +169,7 @@ body {
     margin-right: 8px;
     place-items: center;
     background-position: center;
-    aspect-ratio: 16/6;
+    aspect-ratio: 4/3;
 }
 .one {
     background-image: url("assets/shoe.jpg");
@@ -170,9 +186,23 @@ body {
 .five {
     background-image: url("assets/shoe5.jpg");
 }
+.card {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    max-width: 85%;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
 .card-image {
-    aspect-ratio: 2/1;
+    aspect-ratio: 4/3;
+    max-width: 100%;
     object-fit: cover;
     object-position: center;
-    max-width: 100%;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
 }
