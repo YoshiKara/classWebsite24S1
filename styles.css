@@ -101,9 +101,6 @@ body {
 .search-button {
     border-radius: 0px 5px 5px 0px;
     padding: 0.5em;
-    color: var(--gold-metallic);
-    background-color: var(--naples-yellow);
-    border-color: var(--naples-yellow);
 }
 .socials-navigation {
     justify-self: end;
@@ -237,7 +234,7 @@ body {
 }
 .card-content {
     padding: 0 0 12px 12px;
-    margin-right: 12px;
+    margin-right: 1em;
 }
 .cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -268,7 +265,7 @@ body {
     flex-direction: column;
 }
 #contact-form label {
-    margin-top: 0.1em;
+    margin-top: 0.2em;
     margin-bottom: 0.1em;
 }
 #contact-form input, #contact-form textarea {
@@ -283,12 +280,33 @@ body {
     padding: 0.5em;
     min-width: 6em;
     margin-top: 1em;
-    color: var(--gold-metallic);
-    background-color: var(--cosmic-latte);
+    justify-items: end;
 }
-.bottom {
+.bottom-card {
     grid-column: span 2;
 }
-.contact-content {
+.contact-us {
     margin-left: 12px;
+    margin-top: -20px;
+}
+.about-logo {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+.sidebar-submenu {
+    margin-left: 0.5em;
+}
+textarea {
+    resize: none;
+}
+.row {
+    width: 100%;
+    padding-bottom: 1em;
+}
+.row button[type=submit] {
+    position: absolute;
+    margin: 0;
+    right: 16px;
 }
