@@ -78,7 +78,6 @@ body {
 }
 .search-form {
     justify-self: left;
-    align-self: left;
     grid-row-start: 2;
     grid-column-start: 2;
     padding: 0 0 0.2em 0;
