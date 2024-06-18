@@ -63,7 +63,7 @@ body {
     position: fixed;
     z-index: 1;
     background-color: var(--jasmine);
-    top: 154px;
+    top: 150px;
     overflow: hidden;
 }
 .sidebar a {
@@ -101,6 +101,9 @@ body {
 .search-button {
     border-radius: 0px 5px 5px 0px;
     padding: 0.5em;
+    color: var(--gold-metallic);
+    background-color: var(--naples-yellow);
+    border-color: var(--naples-yellow);
 }
 .socials-navigation {
     justify-self: end;
@@ -171,6 +174,8 @@ body {
     place-items: center;
     background-position: center;
     aspect-ratio: 4/3;
+    display: grid;
+    background-size: cover;
 }
 .one {
     background-image: url("assets/shoe.jpg");
@@ -206,14 +211,14 @@ body {
     grid-column-start: 2;
     grid-row-start: 2;
     max-width: 75%;
-    margin-top: 5em;
+    margin-top: 8em;
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     
 }
 .card-image {
-    aspect-ratio: 4/3;
+    aspect-ratio: 1/1;
     max-width: 100%;
     object-fit: cover;
     object-position: center;
@@ -222,7 +227,7 @@ body {
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
+    column-gap: 3em;
 }
 .cards {
     background-color: var(--cosmic-latte);
@@ -232,6 +237,7 @@ body {
 }
 .card-content {
     padding: 0 0 12px 12px;
+    margin-right: 12px;
 }
 .cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -239,4 +245,50 @@ body {
 .cards a {
     text-decoration: none;
     color: var(--gold-metallic);
+}
+.grid-2 {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto auto;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.map {
+    border-radius: 10px;
+    min-height: 360px;
+}
+.contact-cards a {
+    text-decoration: none;
+    color: var(--gold-metallic);
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+#contact-form label {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+#contact-form input, #contact-form textarea {
+    display: block;
+    padding: 4px;
+    border-color: var(--gold-metallic);
+    border-width:1px;
+    border-style: solid;
+}
+#contact-form button {
+    border-radius: 5px 5px 5px 5px;
+    padding: 0.5em;
+    min-width: 6em;
+    margin-top: 1em;
+    color: var(--gold-metallic);
+    background-color: var(--cosmic-latte);
+}
+.bottom {
+    grid-column: span 2;
+}
+.contact-content {
+    margin-left: 12px;
 }
